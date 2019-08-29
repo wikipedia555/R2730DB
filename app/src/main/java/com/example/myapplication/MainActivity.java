@@ -8,6 +8,7 @@ import android.hardware.ConsumerIrManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         opticalb = (ImageButton) findViewById(R.id.opt);
         coaxialb = (ImageButton) findViewById(R.id.coaxial);
         bluetoothb = (ImageButton) findViewById(R.id.bluet);
+        final String errIr = "The device is not equipped with an IR port";
         final ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
         final int frequency = 36000;
         final int[] volume_plus = new int[]{8900,4500, 550,600, 550,550, 550,600, 550,550, 600,1650, 550,600, 550,550, 550,600, 550,1650, 600,1650, 600,1650, 600,550, 550,550, 600,1650, 600,1650, 600,1650, 600,1650, 600,550, 550,550, 600,1650, 600,550, 550,550, 600,550, 550,550, 600,550, 550,1650, 600,1650, 600,550, 600,1650, 600,1650, 600,1650, 600,1650, 600};
@@ -51,62 +53,136 @@ public class MainActivity extends AppCompatActivity {
         power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, on_off);
+                try {
+                    consumerIrManager.transmit(frequency, on_off);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
         mute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, mute_device);
+                try {
+                    consumerIrManager.transmit(frequency, mute_device);
+                    }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
         minusb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, volume_minus);
+                try {
+                    consumerIrManager.transmit(frequency, volume_minus);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+
             }
         });
 
         plusb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, volume_plus);
+                try {
+                    consumerIrManager.transmit(frequency, volume_plus);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+
             }
         });
 
         line1b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, line1);
+                try {
+                    consumerIrManager.transmit(frequency, line1);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
         line2b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, line2);
+                try {
+                    consumerIrManager.transmit(frequency, line2);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
         opticalb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, opt);
+                try {
+                    consumerIrManager.transmit(frequency, opt);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
 
         coaxialb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, coaxial);
+                try {
+                    consumerIrManager.transmit(frequency, coaxial);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
         bluetoothb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                consumerIrManager.transmit(frequency, bluetooth);
+                try {
+                    consumerIrManager.transmit(frequency, bluetooth);
+                }
+                catch(UnsupportedOperationException e)
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            errIr, Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         });
     }

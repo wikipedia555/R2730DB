@@ -5,40 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/backGround">
+    android:background="@drawable/fon1">
 
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@color/backGround">
+    android:background="@null">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginBottom="5dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/mute"
-            android:src="@drawable/mute"
-            android:background="@null"/>
+            android:background="@drawable/mutebutton" />
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentRight="true"
                 android:id="@+id/power"
-                android:src="@drawable/power"
-                android:background="@null"/>
+                android:background="@drawable/powerbutton" />
         </RelativeLayout>
     </LinearLayout>
     <!-- first end -->
@@ -46,27 +44,25 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/minus"
-            android:src="@drawable/minus"
-            android:background="@null"/>
+            android:background="@drawable/minusbutton" />
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentRight="true"
                 android:id="@+id/plus"
-                android:src="@drawable/plus"
-                android:background="@null"/>
+                android:background="@drawable/plusbutton" />
         </RelativeLayout>
     </LinearLayout>
     <!-- second end -->
@@ -74,27 +70,25 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/line1"
-            android:src="@drawable/line1"
-            android:background="@null"/>
+            android:background="@drawable/line1button"/>
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentRight="true"
                 android:id="@+id/line2"
-                android:src="@drawable/line2"
-                android:background="@null"/>
+                android:background="@drawable/line2button" />
         </RelativeLayout>
     </LinearLayout>
     <!-- 3 end -->
@@ -102,27 +96,25 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/opt"
-            android:src="@drawable/optical"
-            android:background="@null"/>
+            android:background="@drawable/opticalbutton" />
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_alignParentRight="true"
                 android:id="@+id/coaxial"
-                android:src="@drawable/coaxial"
-                android:background="@null"/>
+                android:background="@drawable/coaxialbutton" />
         </RelativeLayout>
     </LinearLayout>
     <!-- 4 end -->
@@ -132,18 +124,18 @@
         android:layout_height="fill_parent"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp">
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/bluet"
-            android:src="@drawable/bluetooth"
+            android:background="@drawable/bluetoothbutton"
             android:layout_centerHorizontal="true"
-            android:background="@null"/>
+            />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
