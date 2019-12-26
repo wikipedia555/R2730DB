@@ -14,7 +14,7 @@ To install, you need to download the .apk file from the folder [click](https://g
 You can also download the project, and assemble it in an android studio with all the necessary parameters and changes.
 
 
-![Screenshot app](https://raw.githubusercontent.com/wikipedia555/R2730DB/master/screenshot.jpg)
+![Screenshot app](https://raw.githubusercontent.com/wikipedia555/R2730DB/master/screenshot.jpg?token=AJJCOKFZ7WUESIRF23X72LC6AS4SY)
 
 ## Authors
 Ilya Starodubtsev [vk.com](https://vk.com/id19640082)  Email: kentbrokmen55@gmail.com
