@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#000</color>
     <color name="colorAccent">#D81B60</color>
     <color name="backGround">#808080</color>
+    <color name="switchoff">#ffffff</color>
+    <color name="switchon">#ff0000</color>
 </resources>

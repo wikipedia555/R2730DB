@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/fon1">
+    android:background="@color/backGround">
 
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -13,6 +13,39 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@null">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp">
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/on_off_switch"
+            android:theme="@style/MySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:thumbTint="#000000"
+            android:trackTint="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:textOff="OFF"
+            android:textOn="ON"
+            app:showText="true"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Vibration"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:layout_toLeftOf="@id/on_off_switch"/>
+
+    </RelativeLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
@@ -138,5 +171,32 @@
             />
         </RelativeLayout>
     </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110sp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textEdifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:text="EDIFIER"
+            android:layout_alignParentTop="true"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:text="RC10D1"
+            android:layout_below="@+id/textEdifier"></TextView>
+
+    </RelativeLayout>
 </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
